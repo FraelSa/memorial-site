@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-/* Cabeçalho */
 header {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   background: #ff9292;
@@ -22,7 +21,6 @@ nav ul li {
   cursor: pointer;
 }
 
-/* Layout geral */
 .main-container {
   display: flex;
   flex-direction: row;
@@ -32,10 +30,9 @@ nav ul li {
   max-width: 1200px;
   margin: 30px auto;
   padding: 0 20px;
-  flex-wrap: wrap; /* Para responsividade */
+  flex-wrap: wrap;
 }
 
-/* Coluna da matéria principal */
 .conteudo {
   flex: 1 1 600px;
   max-width: 700px;
@@ -72,7 +69,6 @@ nav ul li {
   line-height: 1.6;
 }
 
-/* Coluna lateral de outras notícias */
 .noticias {
   width: 300px;
   display: flex;
@@ -88,7 +84,6 @@ nav ul li {
   margin: 0 auto;
 }
 
-/* Responsivo para telas menores */
 @media (max-width: 768px) {
   .main-container {
     flex-direction: column;
