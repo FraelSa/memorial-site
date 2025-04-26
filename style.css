@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Cabeçalho */
+header {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  background: #ff9292;
+  font-family: 'Bebas Neue', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav ul li {
+  cursor: pointer;
+}
+
+/* Layout geral */
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+  flex-wrap: wrap; /* Para responsividade */
+}
+
+/* Coluna da matéria principal */
+.conteudo {
+  flex: 1 1 600px;
+  max-width: 700px;
+  min-width: 300px;
+}
+
+.frame {
+  text-align: center;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.label2 .in-memoriam-por {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: #060000;
+  font-size: 26px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.label1 {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.noticiaP {
+  font-weight: 400;
+  color: #060000;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Coluna lateral de outras notícias */
+.noticias {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mortos {
+  width: 60%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .noticias {
+    width: 100%;
+  }
+}
